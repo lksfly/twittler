@@ -29,6 +29,7 @@ function generateNewTweet() {
   tweet.message = randomMessage[getRandomInt(0, randomMessage.length)];
   tweet.created_at = new Date(); // 어떻게 하면 보기 좋은 형태로 나타낼 수 있을까요?
   return tweet;
+  
 }
 
 Number.prototype.padLeft = function() {
