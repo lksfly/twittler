@@ -2,6 +2,8 @@
 
 // DATA는 이미 작성된 트윗을 표시합니다.
 
+//go back 뒤 다시 이름 누르면 정렬안됨 ( 댓글 추가하고 정렬하면 됨.)
+
 console.log(DATA)
 
 var DATA = [
@@ -44,6 +46,7 @@ function generateRandom() {
             comment.innerHTML = `<span class = "commentName">`+DATA[i]["user"] + `</span>` + `<div class = "date">`+DATA[i]["created_at"]+`</div>`+`<div class="message">`+ DATA[i]["message"]+`</div>`;
             document.querySelector(".check").appendChild(comment);
         }
+        bb();
 
     }
     else{
@@ -155,3 +158,6 @@ function getFormattedDate(){
 
 
 //document.getElementById('test').innerHTML = 'hello twittler, check developer console!';
+
+   
+    
